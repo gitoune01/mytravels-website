@@ -1,0 +1,85 @@
+@use "../abstracts" as *;
+
+
+.toggle-open{
+ @include position(fixed,4rem,null,null,3rem,null,null);
+ z-index:700;
+ @include responsive(large){
+     right: 5rem;
+ }
+ @include responsive(medium){
+     right: 4rem;
+ }
+ @include responsive(small){
+     right: 2rem;
+ }
+ @include responsive(xsmall){
+     right: 1.5rem;
+ }
+
+ cursor:pointer;
+ span:nth-child(1){
+  display: block;
+  background: $main2;
+  width: 3rem;
+  height: .3rem;
+  transition: all .2s linear;
+ }
+ span:nth-child(2){
+  display: block;
+  background: $main2;
+  width: 3rem;
+  height: .3rem;
+  margin-top: .5rem;
+  transition: all .2s linear;
+ }
+ span:nth-child(3){
+  display: block;
+  background: $main2;
+  width: 3rem;
+  height: .3rem;
+  margin-top: .5rem;
+  transition: all .2s linear;
+ }
+
+}
+
+.toggle-close{ 
+
+  @include position(fixed,4rem,null,null,3rem,null,null);
+ z-index:700;
+ cursor:pointer;
+ span:nth-child(1){
+  display: block;
+  background: $main2;
+  width: 3rem;
+  height: 1.5px;
+  transform: rotate(-45deg) translateY(.5rem);
+  transition: all .2s linear;
+ }
+ span:nth-child(2){
+    display: none;
+ }
+ span:nth-child(3){
+  display: block;
+  background: $main2;
+  width: 3rem;
+  height: 1.5px;
+  margin-top: .5rem;
+  transform: rotate(45deg) translateY(-.5rem);
+  transition: all .2s linear;
+ }
+ @include responsive(large){
+   right: 5rem;
+}
+@include responsive(medium){
+   right: 4rem;
+}
+@include responsive(small){
+   right: 2rem;
+}
+@include responsive(xsmall){
+   right: 1.5rem;
+}
+
+}

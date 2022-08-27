@@ -1,0 +1,26 @@
+@use "./SCSS/base/base";
+
+
+//import utils
+@use "./SCSS/utils/utils";
+
+
+//import components
+@use "./SCSS/components/header";
+@use "./SCSS/components/modal";
+@use "./SCSS/components/nav";
+@use "./SCSS/components/toggle";
+@use "./SCSS/components/destinations";
+@use "./SCSS/components/destinationInfo";
+@use "./SCSS/components/cities";
+@use "./SCSS/components/services";
+@use "./SCSS/components/reviews";
+@use "./SCSS/components/gallery";
+@use "./SCSS/components/footer";
+@use "./SCSS/components/pageContainer";
+
+//import layout
+@use "./SCSS/layout/layout"
+
+
+
